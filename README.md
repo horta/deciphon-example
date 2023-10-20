@@ -1,7 +1,7 @@
 # Hello Sandy 👋
 
 I will show the steps to run Deciphon server and populate it with some data
-so that you can better test deciphon_web.
+so that you can better test `deciphon_web`.
 
 Assuming you have Docker installed, you can enter
 
@@ -54,4 +54,32 @@ deciphonctl scan ls
 
 # Once it is done, visualize its result
 deciphonctl scan snap-view 1
+```
+
+The last output should be similar to:
+
+```
+Alignments for each domain:
+== domain 1  score: 247.9 bits;  conditional E-value: 2.9e-78
+               HHHHHHTCTTSEEEEEEEE--HHHHHHHHHHHCHTT-HHHHHHHHHHTTSS-SSTHHHHTTHHHHHHHHHHHHHHCTTT--GGGSEE--STTS-HH CS
+PF00742.20   3 ISTLKESLIGDRITRIEGILNGTMNYILTEMEEEGASFSEALKEAQQLGYAEADPTDDVEGLDAARKLAILARLAFGLEVELEDVEVEAIEKLTAE 98
+               istlkesl gdritriegilngt+nyiltemeeegasfsealkeaq+lGyaEaDptdDveGlDaarKlailarlafgleveledveve iekltae
+             1 ISTLKESLIGDRITRIEGILNGTMNYILTEMEEEGASFSEALKEAQQLGYAEADPTDDVEGLDAARKLAILARLAFGLEVELEDVEVEAIEKLTAE 96
+    enzime   1 ATACAGTCAGGCAACAGGATAGCTATACAGAGGGGGTTTGGCAGGCCTGTGGGGCAGGGGGCGGGAACGACGATGTGTGGGTGGGGGGGAGACAGG 284
+               TCCTAACTTGAGTCGTAGTTAGCGAATTCATAAAGCCTCACTAACAATGACACACCAATAGTACCGATCTTCGTCTGTATATAATATACTAATCCA
+               TGGCGGGGATCTTTACAGAACC..TCTCTGGGAGGTACTGGGGGAGAGCCGAGTTGCTGAGATTTAGGATACAGATGAGCGGGCAGGAATAGGTCA
+               ................................................................................................
+               ................................................................................................
+               79********************************************************************************************** PP
+
+               HHHHHHCTTEEEEEEEEECEEEEEEEEEETTSGGGHSSST.EEEEEEESSSEE..EEEEES-SSHHHHHHHH CS
+PF00742.20  99 DIEKIKEEGKVLKLVASAVEARVKPELVPKSHPLASVKGSDNAVAVETERHSVgeLVVQGPGAGEEPTASAV 170
+               die+ keegkvlklvasavearvkpelvpkshplasvkgsdnavaveter++   lvvqGpgaG+epTAsav
+            97 DIEKIKEEGKVLKLVASAVEARVKPELVPKSHPLASVKGSDNAVAVETERHSVGELVVQGPGAGEEPTASAV 168
+    enzime 287 GAGAAAGGGAGTACGGAGGGGAGACGCGCATCCTGTGAGTGAGGGGGAGCCTGGGCGGCGCGGGGGCAGTGG 501
+               ATAATAAAGATTATTCGCTACGTACATTCACACTCCTAGCAACTCTACAGACGGATTTAGCGCGAACCCCCT
+               TTAAAGAGTATAAAGACCCACGCGTGGATGATAACGAACTCCCGTAAGAATTTCACAGGAAGTCAGACACTA
+               ....................................................A...................
+               ........................................................................
+               *************************************************987667***************** PP
 ```
